@@ -8,8 +8,12 @@ $(document).ready(function(){
 
 
 function onDeviceReady(){
-	var channel='yrmentor';
-	
+	if(localStorage.channel == null || localStorage.channel==''){
+		//Ask user for chanel
+		$('#popupDialog').popup("open");
+	}else{
+		var channel = localStorage.getItem('channel');
+	}
 	getPlaylist(channel);
 	
 	
