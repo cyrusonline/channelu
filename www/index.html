@@ -14,7 +14,8 @@
     <body>
         <div data-role = "page" id="main">
         <div data-role = "header">
-        <h1>Channel</h1>
+      <h1>Channel</h1><a href="#options" data-icon="gear" class="ui-btn-right">Options</a>
+        
         
         </div>
         <div data-role="content">
@@ -22,6 +23,35 @@
         <div id="ShowVideo"></div>
         <br><br>
         <ul id="vidlist" data-role="listview"></ul>
+        
+        
+        </div>
+        <div data-role="footer">
+        <h4> ChannelU &copy; 2015</h4>
+        
+        </div>
+        
+        </div>
+        
+        
+        <div data-role = "page" id="options">
+        <div data-role = "header">
+         <a href="#main" data-icon="delete">Cancel</a><h1>Options</h1><a href="#" id="saveOptions" data-icon="check" data-theme="b">Save</a>
+        
+        
+        </div>
+        <div data-role="content">
+   		<div data-role="fieldcontain">
+   		<label for="channelNameOptions">Channel Name</label>
+   		<input type="text" name="ChannelNameOptions" id="ChannelNameOptions" placeholder="Enter Channel name">
+   		<br>
+   		<div class = "ui-btn ui-input-btn ui-shadow">
+   		Clear Channel
+   		<input type = "button" id="clearChannel" data-corners="false" data-enhanced="true" value="ClearChannel">
+   		</div>
+   		
+   		
+   		</div>
         
         
         </div>
